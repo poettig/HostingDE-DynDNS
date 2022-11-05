@@ -16,6 +16,10 @@ python3 dyndns.py -c /path/to/config.toml
 
 An template for the config file is given in [config.toml.template](config.toml.template).
 
+Instead of binding to an IP and port, technically there is an implementation for unix sockets.
+However, this was never tested - use at your own risk.
+The config variable for this is `bind_socket`.
+
 #### Help output
 ```
 > python3 dyndns.py -h
