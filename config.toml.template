@@ -1,0 +1,9 @@
+[main]
+bind_host="::1"
+bind_port=5354
+allowed_domains=["dyndns1.example.com", "dyndns2.example.com"] # Can also be 'false' to disable allowlist checking
+
+[hosting_de_dns_api]
+token=<has_to_have_zone_edit_permissions>
+zone="example.com"
+default_ttl=300
