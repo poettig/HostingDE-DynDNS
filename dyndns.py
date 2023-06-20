@@ -164,7 +164,8 @@ class Root:
         if ipv6:
             update_wrapper("AAAA", ipv6)
 
-        return "<br/>".join(results)
+        cherrypy.response.headers['Content-Type'] = 'text/plain'
+        return "\n".join(results)
 
 
 def main():
