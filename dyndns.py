@@ -144,7 +144,7 @@ class Root:
                     f"Successfully updated {record_type} record for {result['name']}:"
                     f" {result['content']}, TTL {result['ttl']} at {result['lastChangeDate']}"
                 )
-                results.append(f"Successfully updated {record_type} record for {result['name']}")
+                results.append(f"Successfully updated {record_type} record for {result['name']} to {result['content']}")
             except DNSAPIException as e:
                 logging.error(
                     f"Failed to update {record_type} record for {domain}"
