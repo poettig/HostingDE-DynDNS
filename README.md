@@ -52,4 +52,4 @@ The query parameters are
 * This application is not written to run with SSL and does not provide any authentication. Using a reverse proxy for transport encryption and authentication is expected.
 * Records are only updated, never created. This is to prevent this server from creating arbitrary DNS records.
 * Additionally, you can provide a list of allowed domains in the config. This prevents editing different records from the ones you want for DynDNS via a simple GET request.
-* For the hosting.de API token, you can only select DNS-Service → Zonen → Bearbeiten. There are no additional permissions required, I recommend creating such a least privileges token.
+* For the hosting.de API token, you can create one by clicking on the user icon on the top right next to your name → Profil → scroll down to "API Keys". You can only select DNS-Service → Zonen → Bearbeiten. There are no additional permissions required, I recommend creating such a least privileges token.
