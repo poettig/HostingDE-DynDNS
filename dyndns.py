@@ -4,7 +4,7 @@ import typing
 
 import cherrypy
 import requests
-import toml
+import tomllib
 
 
 class DNSAPIException(Exception):
@@ -185,8 +185,8 @@ def main():
         datefmt="%Y-%m-%d %H:%M:%S"
     )
 
-    with open(args.config, "r") as fh:
-        config = toml.load(fh)
+    with open(args.config, "rb") as fh:
+        config = tomllib.load(fh)
 
     cherrypy.config.update({"global": {"environment": "production"}})
     cherrypy.log.screen = True
